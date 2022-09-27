@@ -1,8 +1,264 @@
-.container {
+// banner section
+@mixin spaceBetween{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.home_wrapper {
+  background: #e5e5e5;
+  padding-bottom: 30px;
+  .container {
     max-width: 80%;
     margin: 0 auto;
     box-sizing: border-box;
+    .banner_wrapper {
+        padding-top: 100px;
+        @include spaceBetween;
+    
+      .left_txt {
+        max-width: 40%;
+        .red_txt{
+            letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: #FF694B;
+                font-weight: 500;
+                    font-size: 12px;
+                    line-height: 21px;
+                    border-bottom: 1px solid #FF694B;
+                    width: 145px;
+
+        }
+        h2{
+            font-weight: 700;
+                font-size: 43px;
+                line-height: 50px;
+                margin: 14px 0 30px 0;
+        }
+        .description{
+            color: #757683;
+            font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                width: 380px;
+        }
+        .hire_section{
+            display: flex;
+            align-items: center;
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 21px;
+            }
+            button{
+                background: #1B1C23;
+                    border-radius: 0px 10px 0px 0px;
+                    border: none;
+                    outline: none;
+                    margin-right: 20px;
+                    padding: 5px;
+            }
+        }
+        .proud{
+            font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                color: #757683;
+                border-top: 1px solid #C8C8C8;
+                width: 80%;
+                padding-top: 20px;
+                margin-top: 30px;
+        }
+      }
+      .img_section {
+        max-width: 40%;
+        svg{
+            width: 789px;
+                height: 628px;
+        }
+      }
+      .right_txt {
+        
+        max-width: 20%;
+        .txt1{
+            font-weight: 700;
+                font-size: 22px;
+                line-height: 25px;
+        }
+        .txt2{
+            font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: #FF694B;
+                border-bottom: 1px solid #FF694B;
+                width: 130px;
+                padding-bottom: 3px;
+        }
+      }
+    }
+  }
+
+  // second section
+
+  .clients_wrapper {
+      padding-top: 150px;
+      @include spaceBetween;
+
+      .img_section {
+          max-width: 40%;
+      }
+
+      .right_promise_section {
+          max-width: 50%;
+
+          .promise {
+              font-weight: 700;
+              font-size: 39px;
+              line-height: 62px;
+              text-transform: capitalize;
+          }
+      }
+
+      .divs {
+          @include spaceBetween;
+          align-items: flex-start;
+
+          .lft_section {
+              margin-right: 50px;
+
+              .num1 {
+                  background: #FF694B;
+                  width: 40px;
+                  height: 40px;
+                  text-align: center;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+              }
+
+              .inner_txt1 {
+                  .txt1 {
+                      font-weight: 700;
+                      font-size: 18px;
+                      line-height: 28px;
+                  }
+
+                  .txt2 {
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 26px;
+                      color: #757683;
+                  }
+              }
+          }
+
+          .rght_section {
+              .num1 {
+                  background: #FF694B;
+                  width: 40px;
+                  height: 40px;
+                  text-align: center;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+              }
+
+              .inner_txt2 {
+                  .txt1 {
+                      font-weight: 700;
+                      font-size: 18px;
+                      line-height: 28px;
+                  }
+
+                  .txt2 {
+                      font-style: normal;
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 26px;
+                      color: #757683;
+                  }
+              }
+          }
+      }
+  }
+
+//   projects part'
+
+.projects{
+    .title {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 62px;
+            text-align: center;
+            color: #1B1C23;
+            margin-top: 100px;
+        }
+.project_card_wrapper{
+    @include spaceBetween;
+    flex-wrap: wrap;
+    background: #F8F8F8;
+    row-gap: 40px;
+    padding: 50px;
+.project_card{
+    background: #FFFFFF;
+        box-shadow: 0px 10px 30px rgba(228, 228, 228, 0.25);
+        padding: 20px;
+        width: 30%;
+        border-radius: 5%;
+        .border_top{
+            border-top: 1px solid gray;
+            padding-top: 15px;
+        }
 }
-.home_wrapper{
-    background: #E5E5E5;
 }
+}
+
+// get in touch
+.get_touch{
+background-image: url(../images//Bg.png);
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin: 100px 0 50px 0;
+
+.bold{
+    font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+}
+.light{
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #A6A7AE;
+}
+button{
+    margin-top: 30px;
+    width: 171px;
+        height: 40px;
+        font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #FF694B;
+            outline: none;
+            border: none;
+}
+}
+.copyright{
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #899098;
+        margin: 0;
+        margin-top: 30px;
+}
+}
+
+
