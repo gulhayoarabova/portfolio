@@ -27,6 +27,7 @@ export default function Home() {
               Hi, I’m Gulhayo. I’m a Frontend developer. If you are looking for
               developer to build your websites and grow your business Let’s
               shake hands with me.
+              {/* this is comment */}
             </p>
             <div className={classes.hire_section}>
               <button>
