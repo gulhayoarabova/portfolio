@@ -15,6 +15,9 @@ a {
   box-sizing: border-box;
 }
 
+button,a{
+  cursor: pointer;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

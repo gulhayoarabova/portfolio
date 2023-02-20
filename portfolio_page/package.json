@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "file-saver": "^2.0.5",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-pdf": "^6.2.2",
     "sass": "^1.54.9"
   },
   "devDependencies": {

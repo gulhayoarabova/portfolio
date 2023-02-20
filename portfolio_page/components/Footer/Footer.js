@@ -44,7 +44,9 @@ const Footer = () => {
                     <li>Services</li>
                     <li>Portfolio</li>
                     <li>News</li>
+                    <Link href="/contact" passHref>
                     <li>Contact</li>
+                    </Link>
                 </ul>
                 <Link href={"gulhayoarabova@gmail.com"}>
                 <p className={classes.email}>gulhayoarabova@gmail.com</p>

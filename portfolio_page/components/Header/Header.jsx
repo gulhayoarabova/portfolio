@@ -1,30 +1,34 @@
-import React from 'react'
+import  Link  from "next/link";
 import Image from "next/image";
-import logo from "../../assets/images/Logo.png"
-import classes from "../../assets/styles/Header.module.scss"
-
+import logo from "../../assets/images/Logo.png";
+import classes from "../../assets/styles/Header.module.scss";
 const Header = () => {
   return (
     <div className={classes.header_wrapper}>
-        <div className={classes.img_section}>
-            <Image src={logo}/>
-        </div>
-        
-<ul className={classes.ul_section}>
-<li>Start</li>
-<li>Services</li>
-<li>Portfolio</li>
-<li>News</li>
-<li>Contact</li>
-</ul>
-<div className={classes.btn_section}>
-    <button>
-    Book a call
-</button>
-</div>
+      <div className={classes.img_section}>
+        <Image src={logo} />
+      </div>
 
-   </div>
-  )
-}
+      <ul className={classes.ul_section}>
+        <li>Blog</li>
+        <li>Services</li>
+        <li>Portfolio</li>
+        <li>News</li>
+        <li>
+        <Link href="/contact" passHref>
+          <a>
+        Contact
+        </a>
+        </Link>
+        </li>
+      </ul>
+      <div className={classes.btn_section}>
+        <button>
+         <a href="tel:+998958090420">Book a Call</a> 
+         </button>
+      </div>
+    </div>
+  );
+};
 
-export default Header
+export default Header;

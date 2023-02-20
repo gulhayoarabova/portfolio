@@ -1,0 +1,77 @@
+.contact_bg {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  .contact_main_section {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #F3F1FA;
+    .big_txt {
+      margin: 0;
+      font-weight: 600;
+      font-size: 54px;
+      text-transform: capitalize;
+      color: #1d253c;
+      
+    }
+    .sml_txt {
+      font-weight: 500;
+      font-size: 18px;
+      color: #5a6482;
+    }
+    .input_wrapper {
+      margin-top: 50px;
+      font-weight: 500;
+      .name_Wrap {
+        div {
+          display: flex;
+          flex-direction: column;
+        }
+        input{
+          width: 300px;
+          height: 30px;
+          padding: 20px;
+          margin-bottom: 20px;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+        }
+        label {
+          margin-bottom: 8px;
+        }
+      }
+      .txtarea {
+        display: flex;
+        flex-direction: column;
+        textarea {
+          border: none;
+          outline: none;
+          padding: 10px 0 0 10px;
+          border-radius: 5px;
+          width: 300px;
+        }
+        label {
+          margin-bottom: 10px;
+        }
+      }
+      .submit_btn{
+        width: 300px;
+        height: 30px;
+        padding: 20px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #EAA58B;
+        cursor: pointer;
+      }
+    }
+  }
+}
