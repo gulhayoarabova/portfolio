@@ -24,8 +24,8 @@ export default function Home() {
             <p className={classes.red_txt}>FRONTEND DEVELOPER</p>
             <h2>Fast working and high quality projects</h2>
             <p className={classes.description}>
-              Hi, I’m Gulhayo. I’m a Frontend developer. If you are looking for
-              developer to build your websites and grow your business Let’s
+              Hi, I’m Gulhayo. I’m a Frontend developer. If you are looking for a
+              developer to build your websites and grow your business, Let’s
               shake hands with me.
               {/* this is comment */}
             </p>
