@@ -17,22 +17,22 @@ const Footer = () => {
             <p className={classes.sml_txt}>I am always open to discuss your project, improve your online presence or help with your UX/UI design</p>
             <div className={classes.icon_wrap}>
                 <div>
-                <Link href={"https://www.facebook.com/profile.php?id=100077345967018"}>
+                <Link href="https://www.facebook.com/profile.php?id=100077345967018">
                     <Image src={ face} />
                 </Link>
                 </div>
                 <div>
-                 <Link href={"https://twitter.com/Gulhayo04"}>
+                 <Link href="https://twitter.com/Gulhayo04">
                     <Image src={twitter } />
                 </Link>
                 </div>
                 <div>
-                 <Link href={"https://t.me/gulhay0"}>
+                 <Link href="https://t.me/gulhay0">
                     <Image src={telegram } />
                 </Link>
                 </div>
                 <div>
-                 <Link href={"https://www.linkedin.com/in/gulhayo-arabova-b865a3210/"}>
+                 <Link href="https://www.linkedin.com/in/gulhayo-arabova-b865a3210/">
                     <Image src={linkedin } />
                 </Link>
                 </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                     <li>Contact</li>
                     </Link>
                 </ul>
-                <Link href={"gulhayoarabova@gmail.com"} passHref>
+                <Link href="gulhayoarabova@gmail.com" passHref>
                     <a>
                 <p className={classes.email}>gulhayoarabova@gmail.com</p></a>
                 </Link>
