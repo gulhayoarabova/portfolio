@@ -4,7 +4,7 @@ import classes from "../assets/styles/Home.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import arrow from "../assets/icons/arrow.png";
-import illustration from "../assets/images/illustration.png";
+import illustration from "../assets/images/Illustratsiya.png";
 import illustrations from "../assets/images/illustrations.png";
 import pizza from "../assets/images/pizza.jpg";
 import skillet from "../assets/images/skilletimg.png";
@@ -38,7 +38,7 @@ export default function Home() {
             <p className={classes.proud}>We are proud of working with you</p>
           </div>
           <div className={classes.img_section}>
-            <Image src={illustration} />
+            <Image priority src={illustration} />
           </div>
           <div className={classes.right_txt}>
             <p className={classes.txt1}>Portfolio Landing UI</p>
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className={classes.clients_wrapper}>
           <div className={classes.img_section}>
-            <Image src={illustrations} />
+            <Image  src={illustrations} />
           </div>
           <div className={classes.right_promise_section}>
             <p className={classes.promise}>

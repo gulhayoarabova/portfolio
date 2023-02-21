@@ -1,12 +1,12 @@
 import  Link  from "next/link";
 import Image from "next/image";
-import logo from "../../assets/images/Logo.png";
+import logotip from "../../assets/images/Logo.png";
 import classes from "../../assets/styles/Header.module.scss";
 const Header = () => {
   return (
     <div className={classes.header_wrapper}>
       <div className={classes.img_section}>
-        <Image src={logo} />
+        <Image src={logotip} />
       </div>
 
       <ul className={classes.ul_section}>

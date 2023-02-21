@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from "./Footer.module.scss"
-import logo from "../../assets/images/logo.png"
+import logo from "../../assets/images/Logo.png"
 import face from "../../assets/icons/face.png"
 import linkedin from "../../assets/icons/Linkedin.png"
 import telegram from "../../assets/icons/telegram-24.png"
@@ -48,8 +48,9 @@ const Footer = () => {
                     <li>Contact</li>
                     </Link>
                 </ul>
-                <Link href={"gulhayoarabova@gmail.com"}>
-                <p className={classes.email}>gulhayoarabova@gmail.com</p>
+                <Link href={"gulhayoarabova@gmail.com"} passHref>
+                    <a>
+                <p className={classes.email}>gulhayoarabova@gmail.com</p></a>
                 </Link>
             </div>
 
