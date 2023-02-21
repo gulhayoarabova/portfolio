@@ -18,22 +18,27 @@ const Footer = () => {
             <div className={classes.icon_wrap}>
                 <div>
                 <Link href="https://www.facebook.com/profile.php?id=100077345967018">
-                    <Image src={ face} />
+                    <a>
+                    <Image src={ face} /></a>
                 </Link>
                 </div>
                 <div>
                  <Link href="https://twitter.com/Gulhayo04">
+                 <a>
                     <Image src={twitter } />
+                    </a>
                 </Link>
                 </div>
                 <div>
                  <Link href="https://t.me/gulhay0">
-                    <Image src={telegram } />
+                    <a>
+                    <Image src={telegram } /></a>
                 </Link>
                 </div>
                 <div>
                  <Link href="https://www.linkedin.com/in/gulhayo-arabova-b865a3210/">
-                    <Image src={linkedin } />
+                    <a>
+                    <Image src={linkedin } /></a>
                 </Link>
                 </div>
             </div>
