@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import arrow from "../assets/icons/arrow.png";
 import illustration from "../assets/images/Illustratsiya.png";
-import illustrations from "../assets/images/illustrations.png";
+import illustrations from "../assets/images/Illustrations.png";
 import pizza from "../assets/images/pizza.jpg";
 import skillet from "../assets/images/skilletimg.png";
 import bello from  "../assets/images/hero.png"
