@@ -1,0 +1,47 @@
+.tmc_wrapper{
+    background-color: rgb(236, 208, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    li{
+        color: blue;
+    }
+    .green{
+     color: green;
+    }
+    form{
+        div{
+            display: flex;
+            flex-direction: column;
+            label{
+                margin: 10px 0;
+
+            }
+            input{
+                outline: none;
+                border: 5px;
+                height: 30px;
+                width: 300px;
+                padding: 10px;
+            }
+        }
+        .radio{
+            display: flex;
+            flex-direction: row;
+            justify-content:  flex-start;
+            width: 20px;
+            align-items: center;
+        }
+        textarea{
+            width: 300px;
+        }
+        button{
+            margin: 10px 0;
+            height: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

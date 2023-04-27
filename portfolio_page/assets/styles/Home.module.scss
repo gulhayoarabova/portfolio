@@ -206,6 +206,12 @@
         padding: 20px;
         width: 30%;
         border-radius: 5%;
+        p,img{
+                &:hover{
+                    cursor: pointer;
+                  color: rgb(0, 93, 214);  
+            }
+        }
         .border_top{
             border-top: 1px solid gray;
             padding-top: 15px;

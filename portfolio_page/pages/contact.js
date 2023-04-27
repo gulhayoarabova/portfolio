@@ -7,8 +7,9 @@ import img1 from "../assets/images/Illustrations.png";
 const Contact = () => {
   return (
     <div className={classes.contact_bg}>
-      <div className={classes.contact_main_section}>
-        <form>
+      {/* <div className={classes.contact_main_section}> */}
+        <h1>Feel free to keep in touch with me</h1>
+        {/* <form>
           <p className={classes.big_txt}>Contact me</p>
           <div className={classes.input_wrapper}>
             <div className={classes.name_Wrap}>
@@ -32,11 +33,11 @@ const Contact = () => {
             </div>
             <button type="submit" className={classes.submit_btn}>Send</button>
           </div>
-        </form>
-        <div className={classes.img_wrap}>
+        </form> */}
+        {/* <div className={classes.img_wrap}>
           <Image src={img1} alt="" width={480} height={400}/>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
   );
 };

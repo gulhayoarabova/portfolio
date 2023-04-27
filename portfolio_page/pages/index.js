@@ -6,13 +6,68 @@ import Image from "next/image";
 import arrow from "../assets/icons/arrow.png";
 import illustration from "../assets/images/Illustratsiya.png";
 import illustrations from "../assets/images/Illustrations.png";
-import pizza from "../assets/images/pizza.jpg";
-import skillet from "../assets/images/skilletimg.png";
-import bello from  "../assets/images/hero.png"
-import rock from "../assets/images/rock.jpg"
+import Pizza from "../assets/images/pizza.jpg";
+import Linkedin from "../assets/images/Linkedin.png";
+import Skillet from "../assets/images/skilletimg.png";
+import Bello from "../assets/images/hero.png";
+import Paybek from "../assets/images/pybk.png"
+import Ima from "../assets/images/ima.png"
+import Store from "../assets/images/store.png"
+import Rock from "../assets/images/rock.jpg";
 import desktop from "../assets/images/desktop.png";
 import Footer from "../components/Footer/Footer";
 import Card from "../components/Cards/Card";
+
+const projectCard = [
+  {
+    id: 1,
+    title: "Rock,Paper,Scissors game",
+    img: Rock,
+    link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+  },
+  {
+    id: 2,
+    title: "Pizza Delivery: Chopar Pizza",
+    img: Pizza,
+   link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+  },
+  {
+    id: 3,
+    title: "Skillet online shop",
+    img: Skillet,
+   link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+  },
+  {
+    id: 4,
+    title: "Bello: new kind of life insurance",
+    img: Bello,
+   link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+  },
+  {
+    id: 5,
+    title: "Linkedin: professional community",
+    img: Linkedin,
+   link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+  },
+  {
+    id: 6,
+    title: "Paybek: pay faster",
+    img: Paybek,
+    link: "https://paybek-landing-pagee.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "IMA: Intellectual Property Agency",
+    img: Ima,
+    link: "https://bespoke-dragon-21b313.netlify.app/",
+  },
+  {
+    id: 8,
+    title: "Online store: ProductList",
+    img: Store,
+    link: "https://product-shop-done.netlify.app/",
+  },
+];
 
 export default function Home() {
   return (
@@ -24,8 +79,8 @@ export default function Home() {
             <p className={classes.red_txt}>FRONTEND DEVELOPER</p>
             <h2>Fast working and high quality projects</h2>
             <p className={classes.description}>
-              Hi, I’m Gulhayo. I’m a Frontend developer. If you are looking for a
-              developer to build your websites and grow your business, Let’s
+              Hi, I’m Gulhayo. I’m a Frontend developer. If you are looking for
+              a developer to build your websites and grow your business, Let’s
               shake hands with me.
               {/* this is comment */}
             </p>
@@ -56,7 +111,7 @@ export default function Home() {
         </div>
         <div className={classes.clients_wrapper}>
           <div className={classes.img_section}>
-            <Image  src={illustrations} />
+            <Image src={illustrations} />
           </div>
           <div className={classes.right_promise_section}>
             <p className={classes.promise}>
@@ -92,53 +147,18 @@ export default function Home() {
         <div className={classes.projects}>
           <p className={classes.title}>Projects</p>
           <div className={classes.project_card_wrapper}>
-            <div className={classes.project_card}>
-              <Image src={pizza} width={280} height={190} />
-              <p className={classes.border_top}>Pizza Delivery: Chopar Pizza</p>
-              <Link href="youtube.com">
-                <p>Visit website ...</p>
-              </Link>
-            </div>
-
-            <div className={classes.project_card}>
-              <Image src={rock} width={280} height={190} />
-              <p className={classes.border_top}>Rock,Paper,Scissors game</p>
-              <Link href="youtube.com">
-                <p>Visit website ...</p>
-              </Link>
-            </div>
-
-            <div className={classes.project_card}>
-              <Image src={skillet} width={280} height={190} />
-              <p className={classes.border_top}>Skillet online shop</p>
-              <Link href="youtube.com">
-                <p>Visit website ...</p>
-              </Link>
-            </div>
-
-            <div className={classes.project_card}>
-              <Image src={bello} width={280} height={190} />
-              <p className={classes.border_top}>Bello: new kind of life insurance</p>
-              <Link href="youtube.com">
-                <p>Visit website ...</p>
-              </Link>
-            </div>
-
-            <div className={classes.project_card}>
-              <Image src={pizza} width={280} height={190} />
-              <p className={classes.border_top}>Pizza Delivery: Chopar Pizza</p>
-              <Link href="youtube.com">
-                <p>Visit website ...</p>
-              </Link>
-            </div>
-
-            <div className={classes.project_card}>
-              <Image src={pizza} width={280} height={190} />
-              <p className={classes.border_top}>Pizza Delivery: Chopar Pizza</p>
-              <Link href="youtube.com">
-                <p>Visit website ...</p>
-              </Link>
-            </div>
+            {projectCard.map((item, id) => (
+              <div className={classes.project_card} key={id}>
+                <Link href={item.link}>
+                <Image src={item.img} width={280} height={190} /></Link>
+                <p className={classes.border_top}>
+                  {item.title}
+                </p>
+                <Link href={item.link}>
+                  <p>Visit website ...</p>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
         <div className={classes.get_touch}>
@@ -150,7 +170,7 @@ export default function Home() {
               Ready to make something creative? Let's get on a call.
             </p>
             <Link href="/contact" passHref>
-            <button className={classes.touch_btn}>Get in touch</button>
+              <button className={classes.touch_btn}>Get in touch</button>
             </Link>
           </div>
         </div>
