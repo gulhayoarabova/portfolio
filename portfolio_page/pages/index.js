@@ -6,7 +6,7 @@ import Image from "next/image";
 import arrow from "../assets/icons/arrow.png";
 import illustration from "../assets/images/Illustratsiya.png";
 import illustrations from "../assets/images/Illustrations.png";
-import Pizza from "../assets/images/pizza.jpg";
+import Reddi from "../assets/images/riddi.png";
 import Linkedin from "../assets/images/Linkedin.png";
 import Skillet from "../assets/images/skilletimg.png";
 import Bello from "../assets/images/hero.png";
@@ -23,31 +23,31 @@ const projectCard = [
     id: 1,
     title: "Rock,Paper,Scissors game",
     img: Rock,
-    link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+    link: "https://game-ashy-one.vercel.app/",
   },
   {
     id: 2,
-    title: "Pizza Delivery: Chopar Pizza",
-    img: Pizza,
-   link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+    title: "Reddi:Online shop",
+    img: Reddi,
+   link: "https://moonlit-starburst-f5ac8c.netlify.app/",
   },
   {
     id: 3,
     title: "Skillet online shop",
     img: Skillet,
-   link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+   link: "https://moonlit-gumption-66edf1.netlify.app/",
   },
   {
     id: 4,
     title: "Bello: new kind of life insurance",
     img: Bello,
-   link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+   link: "https://bello-gamma.vercel.app/",
   },
   {
     id: 5,
     title: "Linkedin: professional community",
     img: Linkedin,
-   link: "https://www.youtube.com/watch?v=4OUFYyiMgM0&list=RDQUEzR5KWBjY&index=4",
+   link: "https://jovial-buttercream-014c7d.netlify.app/",
   },
   {
     id: 6,
