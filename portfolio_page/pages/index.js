@@ -21,15 +21,15 @@ import Card from "../components/Cards/Card";
 const projectCard = [
   {
     id: 1,
-    title: "Rock,Paper,Scissors game",
-    img: Rock,
-    link: "https://game-ashy-one.vercel.app/",
+    title: "IMA: Intellectual Property Agency",
+    img: Ima,
+    link: "https://bespoke-dragon-21b313.netlify.app/",
   },
   {
     id: 2,
-    title: "Reddi:Online shop",
-    img: Reddi,
-   link: "https://moonlit-starburst-f5ac8c.netlify.app/",
+    title: "Linkedin: professional community",
+    img: Linkedin,
+   link: "https://jovial-buttercream-014c7d.netlify.app/",
   },
   {
     id: 3,
@@ -45,9 +45,10 @@ const projectCard = [
   },
   {
     id: 5,
-    title: "Linkedin: professional community",
-    img: Linkedin,
-   link: "https://jovial-buttercream-014c7d.netlify.app/",
+
+   title: "Reddi:Online shop",
+   img: Reddi,
+  link: "https://moonlit-starburst-f5ac8c.netlify.app/",
   },
   {
     id: 6,
@@ -57,9 +58,10 @@ const projectCard = [
   },
   {
     id: 7,
-    title: "IMA: Intellectual Property Agency",
-    img: Ima,
-    link: "https://bespoke-dragon-21b313.netlify.app/",
+
+    title: "Rock,Paper,Scissors game",
+    img: Rock,
+    link: "https://game-blush-six.vercel.app/",
   },
   {
     id: 8,
