@@ -14,10 +14,10 @@ const Footer = () => {
             <div className={classes.inner_wrap}>
             <Image src={logo} />
             <p className={classes.lrg_txt}>Lets Talk with Me!</p>
-            <p className={classes.sml_txt}>I am always open to discuss your project, improve your online presence or help with your UX/UI design</p>
+            <p className={classes.sml_txt}>I am always open to discuss your project adn improve it!</p>
             <div className={classes.icon_wrap}>
                 <div>
-                <Link href="https://www.facebook.com/profile.php?id=100077345967018">
+                <Link href="https://www.facebook.com/profile.php?id=100072974767768&mibextid=ZbWKwL">
                     <a>
                     <Image src={ face} /></a>
                 </Link>
@@ -46,16 +46,16 @@ const Footer = () => {
             <div className={classes.inner2_wrap}>
                 <ul>
                     <li>Start</li>
-                    <li>Services</li>
+                    <li>Resume</li>
                     <li>Portfolio</li>
                     <li>News</li>
                     <Link href="/contact" passHref>
                     <li>Contact</li>
                     </Link>
                 </ul>
-                <Link href="gulhayoarabova@gmail.com" passHref>
+                <Link href="sevinchmavlonova11@gmail.com" passHref>
                     <a>
-                <p className={classes.email}>gulhayoarabova@gmail.com</p></a>
+                <p className={classes.email}>sevinchmavlonova11@gmail.com</p></a>
                 </Link>
             </div>
 

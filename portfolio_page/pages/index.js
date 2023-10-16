@@ -4,70 +4,62 @@ import classes from "../assets/styles/Home.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import arrow from "../assets/icons/arrow.png";
-import illustration from "../assets/images/Illustratsiya.png";
 import illustrations from "../assets/images/Illustrations.png";
-import Reddi from "../assets/images/riddi.png";
-import Linkedin from "../assets/images/Linkedin.png";
-import Skillet from "../assets/images/skilletimg.png";
-import Bello from "../assets/images/hero.png";
-import Paybek from "../assets/images/pybk.png"
-import Ima from "../assets/images/ima.png"
-import Store from "../assets/images/store.png"
-import Rock from "../assets/images/rock.jpg";
+import  self  from "../assets/images/self.jpg";
+import GoldMedal from "../assets/images/medal.jpg"
+import Taekwondo from "../assets/images/taekwondo.png"
+import Supervisor from "../assets/images/Supervisor.jpg"
+import Tedx from "../assets/images/tedx.jpg"
+import Chess from "../assets/images/chess.jpg"
+import tedxleader from "../assets/images/tedxleader.png"
+import IT from "../assets/images/it.png"
+import volunteer from "../assets/images/volunteer.jpg"
 import desktop from "../assets/images/desktop.png";
 import Footer from "../components/Footer/Footer";
-import Card from "../components/Cards/Card";
 
 const projectCard = [
   {
     id: 1,
-    title: "IMA: Intellectual Property Agency",
-    img: Ima,
-    link: "https://bespoke-dragon-21b313.netlify.app/",
+    title: "Academic Excellence",
+    img: GoldMedal,
+   
   },
   {
     id: 2,
-    title: "Linkedin: professional community",
-    img: Linkedin,
-   link: "https://jovial-buttercream-014c7d.netlify.app/",
+    title: "Professional player: Grandmaster",
+    img: Chess,
   },
   {
     id: 3,
-    title: "Skillet online shop",
-    img: Skillet,
-   link: "https://moonlit-gumption-66edf1.netlify.app/",
+    title: "Professional Taekwondist",
+    img: Taekwondo,
   },
   {
     id: 4,
-    title: "Bello: new kind of life insurance",
-    img: Bello,
-   link: "https://bello-gamma.vercel.app/",
+    title: "Supervisor - IDP IELTS",
+    img: Supervisor,
   },
   {
     id: 5,
 
-   title: "Reddi:Online shop",
-   img: Reddi,
-  link: "https://moonlit-starburst-f5ac8c.netlify.app/",
+   title: "Speaker - TEDxWiut",
+   img: Tedx,
   },
   {
     id: 6,
-    title: "Paybek: pay faster",
-    img: Paybek,
-    link: "https://paybek-landing-pagee.netlify.app/",
+    title: "Leader - TEDxWIUT",
+    img: tedxleader,
   },
   {
     id: 7,
 
-    title: "Rock,Paper,Scissors game",
-    img: Rock,
-    link: "https://game-blush-six.vercel.app/",
+    title: "IT courses",
+    img: IT,
   },
   {
     id: 8,
-    title: "Online store: ProductList",
-    img: Store,
-    link: "https://product-shop-done.netlify.app/",
+    title: "Volunteer - Red Crescent Society",
+    img: volunteer,
   },
 ];
 
@@ -78,13 +70,9 @@ export default function Home() {
         <Header />
         <div className={classes.banner_wrapper}>
           <div className={classes.left_txt}>
-            <p className={classes.red_txt}>FRONTEND DEVELOPER</p>
-            <h2>Fast working and high quality projects</h2>
+            <h2>Passionate change maker</h2>
             <p className={classes.description}>
-              Hi, I’m Gulhayo. I’m a Frontend developer. If you are looking for
-              a developer to build your websites and grow your business, Let’s
-              shake hands with me.
-              {/* this is comment */}
+              Hi, I’m Sevinch.  I thrive on meaningful interactions with peers and teachers, always seeking opportunities to learn, lead, and make a positive impact.
             </p>
             <div className={classes.hire_section}>
               <button>
@@ -92,24 +80,12 @@ export default function Home() {
               </button>
               <p>Hire me now</p>
             </div>
-            <p className={classes.proud}>We are proud of working with you</p>
+            <p className={classes.proud}>I am proud of collaborating with you</p>
           </div>
           <div className={classes.img_section}>
-            <Image priority src={illustration} />
+            <Image priority src={self} />
           </div>
-          <div className={classes.right_txt}>
-            <p className={classes.txt1}>Portfolio Landing UI</p>
-            <p className={classes.txt2}>
-              <a
-                href="./GulkhayoResume.pdf"
-                alt="alt text"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Download FIle
-              </a>
-            </p>
-          </div>
+        
         </div>
         <div className={classes.clients_wrapper}>
           <div className={classes.img_section}>
@@ -124,12 +100,9 @@ export default function Home() {
                 <p className={classes.num1}>1</p>
                 <div className={classes.inner_txt1}>
                   <p className={classes.txt1}>
-                    Fast and effectively working website
+                    Fast learning and effectively working 
                   </p>
-                  <p className={classes.txt2}>
-                    Donec metuse, vulputate at sapiens sit amet, auctor iaculis
-                    lorem. In the hendrerit nisi.
-                  </p>
+                 
                 </div>
               </div>
 
@@ -137,28 +110,23 @@ export default function Home() {
                 <p className={classes.num1}>2</p>
                 <div className={classes.inner_txt2}>
                   <p className={classes.txt1}>Friendly Relationship</p>
-                  <p className={classes.txt2}>
-                    Donec metuse, vulputate at sapiens sit amet, auctor iaculis
-                    lorem. In the hendrerit nisi.
-                  </p>
+                 
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className={classes.projects}>
-          <p className={classes.title}>Projects</p>
+          <p className={classes.title}>Achievements</p>
+          <h4> <a href="/content"> See all ... </a></h4>
           <div className={classes.project_card_wrapper}>
             {projectCard.map((item, id) => (
               <div className={classes.project_card} key={id}>
-                <Link href={item.link}>
-                <Image src={item.img} width={280} height={190} /></Link>
+                <Image src={item.img} width={280} height={190} />
                 <p className={classes.border_top}>
                   {item.title}
                 </p>
-                <Link href={item.link}>
-                  <p>Visit website ...</p>
-                </Link>
+                
               </div>
             ))}
           </div>
@@ -166,8 +134,7 @@ export default function Home() {
         <div className={classes.get_touch}>
           <Image src={desktop} width={320} height={340} />
           <div className={classes.txt_wrap}>
-            <p className={classes.bold}>Have Any Project in Mind?</p>
-            <p className={classes.bold}>Don’t Be Hesitate to Contact Us</p>
+            <p className={classes.bold}>Have Any Project in Mind to Collaborate with me?</p>
             <p className={classes.light}>
               Ready to make something creative? Let's get on a call.
             </p>
@@ -177,9 +144,7 @@ export default function Home() {
           </div>
         </div>
         <Footer />
-        <p className={classes.copyright}>
-          Copyright © 2022 by Gulhayo Arabova. All Rights Reserved.
-        </p>
+        
       </div>
     </div>
   );

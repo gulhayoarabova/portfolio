@@ -14,6 +14,7 @@
     .banner_wrapper {
         padding-top: 100px;
         @include spaceBetween;
+        column-gap:30px;
     
       .left_txt {
         max-width: 40%;
@@ -109,7 +110,7 @@
       }
 
       .right_promise_section {
-          max-width: 50%;
+          max-width: 51%;
 
           .promise {
               font-weight: 700;
@@ -186,6 +187,7 @@
 //   projects part'
 
 .projects{
+    text-align: center;
     .title {
             font-weight: 700;
             font-size: 42px;
@@ -193,6 +195,13 @@
             text-align: center;
             color: #1B1C23;
             margin-top: 100px;
+        }
+        h4{
+            font-weight: normal;
+            a{
+                text-decoration: none;
+                
+            }
         }
 .project_card_wrapper{
     @include spaceBetween;

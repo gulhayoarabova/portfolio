@@ -11,7 +11,7 @@ const Header = () => {
 
       <ul className={classes.ul_section}>
         <li>Blog</li>
-        <li>Services</li>
+        <li>Resume</li>
         <li>Portfolio</li>
         <li>News</li>
         <li>
@@ -24,7 +24,7 @@ const Header = () => {
       </ul>
       <div className={classes.btn_section}>
         <button>
-         <a href="tel:+998958090420">Book a Call</a> 
+         <a href="tel:+998 97 001 45 52">Call me! </a> 
          </button>
       </div>
     </div>
