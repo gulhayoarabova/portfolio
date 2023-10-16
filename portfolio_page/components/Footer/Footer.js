@@ -13,7 +13,7 @@ const Footer = () => {
             <div className={classes.inner_wrap}>
             <Image src={logo} />
             <p className={classes.lrg_txt}>Lets Talk with Me!</p>
-            <p className={classes.sml_txt}>I am always open to discuss your project adn improve it!</p>
+            <p className={classes.sml_txt}>I am always open to discuss your project and improve it!</p>
             <div className={classes.icon_wrap}>
                 <div>
                 <Link href="https://www.facebook.com/profile.php?id=100072974767768&mibextid=ZbWKwL">
