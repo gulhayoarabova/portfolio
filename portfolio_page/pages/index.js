@@ -16,7 +16,7 @@ import IT from "../assets/images/it.png"
 import volunteer from "../assets/images/volunteer.jpg"
 import desktop from "../assets/images/desktop.png";
 import Footer from "../components/Footer/Footer";
-
+// this is the comment in this page
 const projectCard = [
   {
     id: 1,
@@ -74,13 +74,13 @@ export default function Home() {
             <p className={classes.description}>
               Hi, I’m Sevinch.  I thrive on meaningful interactions with peers and teachers, always seeking opportunities to learn, lead, and make a positive impact.
             </p>
-            <div className={classes.hire_section}>
+            {/* <div className={classes.hire_section}>
               <button>
                 <Image src={arrow} width={20} height={20} />
               </button>
               <p>Hire me now</p>
-            </div>
-            <p className={classes.proud}>I am proud of collaborating with you</p>
+            </div> */}
+            {/* <p className={classes.proud}>I am proud of collaborating with you</p> */}
           </div>
           <div className={classes.img_section}>
             <Image priority src={self} />
