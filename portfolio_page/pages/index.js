@@ -8,7 +8,7 @@ import illustrations from "../assets/images/Illustrations.png";
 import  self  from "../assets/images/self.jpg";
 import GoldMedal from "../assets/images/medal.jpg"
 import Taekwondo from "../assets/images/taekwondo.png"
-import Supervisor from "../assets/images/Supervisor.jpg"
+import Supervisor from "../assets/images/supervisor.jpg"
 import Tedx from "../assets/images/tedx.jpg"
 import Chess from "../assets/images/chess.jpg"
 import tedxleader from "../assets/images/tedxleader.png"

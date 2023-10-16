@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from "./Footer.module.scss"
 import logo from "../../assets/images/Logo.png"
 import face from "../../assets/icons/face.png"
