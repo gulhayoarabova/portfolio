@@ -1,0 +1,22 @@
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    .content_inside{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+        // align-items: center;
+        column-gap: 100px;
+        .text_wrapper{
+    width: 50%;
+        }
+    }
+    .img_wrapper{
+        margin-top: 50px;
+        display: flex;
+       
+        gap: 30px;
+
+    }
+    }

@@ -1,0 +1,20 @@
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    .content_inside{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+        column-gap: 100px;
+        .text_wrapper{
+    width: 45%;
+        }
+    }
+    .img_wrapper{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    }

@@ -15,11 +15,7 @@ const Header = () => {
         <li>Portfolio</li>
         <li>News</li>
         <li>
-        <Link href="/contact" passHref>
-          <a>
         Contact
-        </a>
-        </Link>
         </li>
       </ul>
       <div className={classes.btn_section}>

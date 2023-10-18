@@ -1,0 +1,16 @@
+
+.wrapper{
+width: 90%;
+margin: 0 auto;
+.content_inside{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    align-items: center;
+    column-gap: 100px;
+    .text_wrapper{
+width: 55%;
+    }
+
+}
+}
