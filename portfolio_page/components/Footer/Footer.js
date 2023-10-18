@@ -15,21 +15,21 @@ const Footer = () => {
             <p className={classes.lrg_txt}>Lets Talk with Me!</p>
             <p className={classes.sml_txt}>I am always open to discuss your project and improve it!</p>
             <div className={classes.icon_wrap}>
-                <div>
+                {/* <div>
                 <Link href="https://www.facebook.com/profile.php?id=100072974767768&mibextid=ZbWKwL">
                     <a>
                     <Image src={ face} /></a>
                 </Link>
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                  <Link href="https://twitter.com/Gulhayo04">
                  <a>
                     <Image src={twitter } />
                     </a>
                 </Link>
-                </div>
+                </div> */}
                 <div>
-                 <Link href="https://t.me/gulhay0">
+                 <Link href="https://t.me/@sevinch_gbs7">
                     <a>
                     <Image src={telegram } /></a>
                 </Link>
