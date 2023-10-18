@@ -1,9 +1,7 @@
 import classes from "./Footer.module.scss"
 import logo from "../../assets/images/Logo.png"
-import face from "../../assets/icons/face.png"
-import linkedin from "../../assets/icons/Linkedin.png"
 import telegram from "../../assets/icons/telegram-24.png"
-import twitter from "../../assets/icons/twitter.png"
+import instagram from "../../assets/icons/instagram.png"
 import Link from "next/link"
 import Image from "next/image";
 
@@ -35,9 +33,9 @@ const Footer = () => {
                 </Link>
                 </div>
                 <div>
-                 <Link href="https://www.linkedin.com/in/gulhayo-arabova-b865a3210/">
+                 <Link href="https://www.instagram.com/sevinch_gbs7/">
                     <a>
-                    <Image src={linkedin } /></a>
+                    <Image src={instagram} /></a>
                 </Link>
                 </div>
             </div>
