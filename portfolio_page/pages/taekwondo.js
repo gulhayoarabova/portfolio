@@ -2,7 +2,7 @@ import React from 'react'
 import taek from "../assets/images/taekwondo.jpg"
 import taek2 from "../assets/images/taekwondo2.jpg"
 import taek3 from "../assets/images/taek3.jpg"
-
+import Link from 'next/link'
 import classes from "./Taekwondo/Taekwondo.module.scss"
 import Image from 'next/image'
 import Header from '../components/Header/Header'
@@ -21,6 +21,7 @@ const Taekwondo = () => {
           indicator of being advanced in this field. I managed to open my own
           group and train them as a coach.
         </p>
+     <a className={classes.certificate} href="./taekwondo.pdf">Certificate</a>
         </div>
         
           <Image src={taek3} width={500} height={400}/>
